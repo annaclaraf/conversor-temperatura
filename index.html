@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="conversor">
+        <h1>Conversor de Temperatura</h1>
+        <div class="imagem"><img src="image/temperatura_maxima.png"></div>
+        <form action="javascript:void(0);" onsubmit="converter()">
+            <label for="grau">Graus: </label>
+            <input type="number" step="0.01" id="grau" required>
+            <div class="opcoes">
+                <label for="select">Temperatura:</label>
+                <select id="select" required>
+                    <option selected disabled>Selecione</option>
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+            </div>
+            <input type="submit" class="button" value="Converter">
+        </form>
+
+        <form>
+            <div class="resultado">
+                <label for="tempcelsius">Temperatura em Celsius: </label>
+                <input type="text" id="tempcelsius" disabled>
+                <label for="tempfahrenheit">Temperatura em Fahrenheit: </label>
+                <input type="text" id="tempfahrenheit" disabled>
+                <label for="tempkelvin">Temperatura em Kelvin: </label>
+                <input type="text" id="tempkelvin" disabled>
+            </div>
+        </form>
+    </main>
+    <script src="conversor.js"></script>
+</body>
+</html>

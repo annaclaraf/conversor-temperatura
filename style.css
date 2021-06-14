@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:lavender;
+}
+
+#conversor{
+    background-color:rgba(127, 111, 170, 0.781);
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px;
+    width: min(90vw, 500px);
+    text-align: center;
+    padding: 20px;
+}
+
+img{
+    width: 20vh;
+}
+
+.imagem{
+    padding: 20px;
+    align-content: center;
+}
+
+label{
+    font-size: 16px;
+    color: #1d182c;
+    display: inline-block;
+}
+
+select, input{
+    font-size: 1em;
+    color: #1d182c;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    margin:15px;
+}
+
+.button{
+    font-size: 1em;
+    background: #1d182c;
+    color: #ffffff;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+}
